@@ -18,34 +18,55 @@
 <main>
 <h5>Contact Information</h5>
 <form>
-<lable>Full Name</lable>
-<input type="text">
-<lable>Email Address</lable>
-<input type="text">
-<lable>Phone Number</lable>
-<input type="text">
-<lable>Street Address</lable>
-<input type="text">
-<lable>City</lable>
-<input type="text">
-<lable>State</lable>
-<input type="text">
-<lable>Zip Code</lable>
-<input type="text">
+<lable for="fname">Full Name</lable><br>
+<input type="text" id="fname" name="" value="" required><br><br>
+<lable for="email">Email Address</lable><br>
+<input type="text" id="email" name="" value="" required><br><br>
+<lable for="tel">Phone Number</lable><br>
+<input type="text" id="tel" name="" value=""><br><br>
+<lable for="address">Street Address</lable><br>
+<input type="text" id="address" name="" value=""><br><br>
+<lable for="city">City</lable><br>
+<input type="text" id="city" name="" value=""><br><br>
+<lable for="state">State</lable><br>
+<select id="state" name="">
+    <option value="Alberta">Alberta</option>
+    <option value="British">British columbia</option>
+    <option value="Manitoba">Manitoba</option>
+    <option value="Newbrunswick">New brunswick</option>
+    <option value="Newfoundland">Newfoundland and labrador</option>
+    <option value="Northwest">Northwest territories</option>
+    <option value="Nova">Nova scotia</option>
+    <option value="Nunavut">Nunavut</option>
+    <option value="Onatrio">Onatrio</option>
+    <option value="Prince">Prince Edward Island</option>
+    <option value="Quebec">Quebec</option>
+    <option value="Saskatchewan">Saskatchewan</option>
+    <option value="Yukon">Yukon</option><br>
+</select>
+<br><br>
+<lable for="zcode">Zip Code</lable><br>
+<input type="text" id="zcode" name="" value=""><br><br>
 <hr>
 
 <h4>Newsletter</h4>
 <h6>Select the newsletters you would like to receive</h6>
-<input type="checkbox">
-<input type="checkbox">
-<input type="checkbox">
-<h6>Newsletter format</h6>
-<input type="radio">
-<input type="radio">
-<p>Other topics you'd like to hear about</p>
-<textarea></textarea>
 
-<input type="submit">
+<input type="checkbox" id="news" name="" value="">
+<lable for="news">HTML News</lable><br>
+
+<input type="checkbox" id="news" name="" value="">
+<lable for="news">CSS News</lable><br>
+<input type="checkbox" id="news" name="" value="">
+<lable for="news">Javascript News</lable><br>
+<h6>Newsletter format</h6>
+<input type="radio" id="format" name="" value="">
+<lable for="format">HTML</lable><br>
+<input type="radio" id="format" name="" value="">
+<lable for="format">Plain text</lable><br>
+<p>Other topics you'd like to hear about</p>
+<textarea></textarea><br>
+<input type="submit" value="Sign Up">
 </main>
 </form>
 
