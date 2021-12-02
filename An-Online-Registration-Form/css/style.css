@@ -1,0 +1,83 @@
+*{
+
+    box-sizing: border-box;
+   
+    margin: 0 auto;
+    padding: 0;
+    line-height: ;
+}
+
+.wrapper{
+
+    margin: auto;
+    width: 50%;
+    
+}
+
+header, footer{
+
+    text-align: center;
+}
+
+
+.button{
+background-color: turquoise; 
+border:none ;
+width: 80%;
+
+padding: 15px;
+color: white;
+font-weight: bold;
+}
+
+
+
+.info{
+
+    margin: 10px;
+}
+
+
+
+.dark{
+
+    border-top: 3px solid black;
+}
+
+.light{
+
+    border-top: 2px solid grey;
+}
+
+.vlight{
+
+    border-top: 2px solid black;
+}
+
+
+
+.contact{
+
+    text-transform: uppercase;
+    color: #fff;
+    background-color: blueviolet;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.tagline{
+
+    color:lightgrey;
+    margin:0 0 15px 0 ;
+
+}
+.foot{
+
+   margin:15px; 
+}
+
+.letters{
+
+  
+}
+

@@ -8,27 +8,30 @@
     <title>An-Online-Registration-Form</title>
 </head>
 <body>
+    <div class="wrapper">
     
     <header>
-    <h4>the code review</h4>
-    <h4>signup for our newsletter</h4>
-    <p>get the latest news on how your code is doing right in your inbox</p>
+    <h4 class="contact">the code review</h4>
+    <h4>Signup for our newsletter</h4>
+    <p class="tagline">Get the latest news on how your code is doing right in your inbox</p>
 </header>
 
 <main>
-<h5>Contact Information</h5>
+    <hr class="dark">
+    <hr class="light">
+<h4 class="info"> Contact Information</h4>
 <form>
-<lable for="fname">Full Name</lable><br>
-<input type="text" id="fname" name="" value="" required><br><br>
-<lable for="email">Email Address</lable><br>
-<input type="text" id="email" name="" value="" required><br><br>
-<lable for="tel">Phone Number</lable><br>
-<input type="text" id="tel" name="" value=""><br><br>
-<lable for="address">Street Address</lable><br>
-<input type="text" id="address" name="" value=""><br><br>
-<lable for="city">City</lable><br>
-<input type="text" id="city" name="" value=""><br><br>
-<lable for="state">State</lable><br>
+<lable for="fname">Full Name</lable>
+<input type="text" id="fname" name="" value="" required class="long"><br><br>
+<lable for="email">Email Address</lable>
+<input type="text" id="email" name="" value="" required class="long"><br><br>
+<lable for="tel">Phone Number</lable>
+<input type="text" id="tel" name="" value="" class="long"><br><br>
+<lable for="address">Street Address</lable>
+<input type="text" id="address" name="" value="" class="long"><br><br>
+<lable for="city">City</lable>
+<input type="text" id="city" name="" value="" class="long"><br><br>
+<lable for="state">State</lable>
 <select id="state" name="">
     <option value="Alberta">Alberta</option>
     <option value="British">British columbia</option>
@@ -45,39 +48,39 @@
     <option value="Yukon">Yukon</option><br>
 </select>
 <br><br>
-<lable for="zcode">Zip Code</lable><br>
-<input type="text" id="zcode" name="" value=""><br><br>
-<hr>
+<lable for="zcode">Zip Code</lable>
+<input type="text" id="zcode" name="" value="" class="long"><br><br>
+<hr class="vlight">
 
-<h4>Newsletter</h4>
-<h6>Select the newsletters you would like to receive</h6>
+<h4 class="info">Newsletter</h4>
+<h5>Select the newsletters you would like to receive</h5>
 
 <input type="checkbox" id="news" name="" value="">
 <lable for="news">HTML News</lable><br>
-
 <input type="checkbox" id="news" name="" value="">
 <lable for="news">CSS News</lable><br>
 <input type="checkbox" id="news" name="" value="">
 <lable for="news">Javascript News</lable><br>
+
 <h6>Newsletter format</h6>
 <input type="radio" id="format" name="" value="">
 <lable for="format">HTML</lable><br>
 <input type="radio" id="format" name="" value="">
 <lable for="format">Plain text</lable><br>
 <p>Other topics you'd like to hear about</p>
-<textarea></textarea><br>
-<input type="submit" value="Sign Up">
+<textarea class="long"></textarea><br>
 </main>
 </form>
 
 <footer>
-
-    <p>Copyright The Code Review</p>
+    
+<input type="submit" value="Sign Up" class="button">
+    <p class="tagline foot">Copyright The Code Review</p>
 </footer>
 
 
 
 
-
+</div>
 </body>
 </html>
