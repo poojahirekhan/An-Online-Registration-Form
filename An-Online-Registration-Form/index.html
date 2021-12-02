@@ -8,29 +8,45 @@
     <title>An-Online-Registration-Form</title>
 </head>
 <body>
-    <div class="wrapper">
     
-    <header>
+<header class="main-head">
     <h4 class="contact">the code review</h4>
     <h4>Signup for our newsletter</h4>
     <p class="tagline">Get the latest news on how your code is doing right in your inbox</p>
 </header>
 
-<main>
     <hr class="dark">
     <hr class="light">
 <h4 class="info"> Contact Information</h4>
+
 <form>
+
+<div>
 <lable for="fname">Full Name</lable>
-<input type="text" id="fname" name="" value="" required class="long"><br><br>
+<input type="text" id="fname" name="" value="" required class="border-remove"><br><br>
+</div>
+
+<div>
 <lable for="email">Email Address</lable>
-<input type="text" id="email" name="" value="" required class="long"><br><br>
+<input type="text" id="email" name="" value="" required class="border-remove"><br><br>
+</div>
+
+<div>
 <lable for="tel">Phone Number</lable>
-<input type="text" id="tel" name="" value="" class="long"><br><br>
+<input type="text" id="tel" name="" value="" class="border-remove"><br><br>
+</div>
+
+<div>
 <lable for="address">Street Address</lable>
-<input type="text" id="address" name="" value="" class="long"><br><br>
+<input type="text" id="address" name="" value="" class="border-remove"><br><br>
+</div>
+
+<div>
 <lable for="city">City</lable>
-<input type="text" id="city" name="" value="" class="long"><br><br>
+<input type="text" id="city" name="" value="" class="border-remove"><br><br>
+</div>
+
+<div class="province">
 <lable for="state">State</lable>
 <select id="state" name="">
     <option value="Alberta">Alberta</option>
@@ -47,40 +63,45 @@
     <option value="Saskatchewan">Saskatchewan</option>
     <option value="Yukon">Yukon</option><br>
 </select>
+</div>
+
 <br><br>
+
+<div class="zip">
 <lable for="zcode">Zip Code</lable>
-<input type="text" id="zcode" name="" value="" class="long"><br><br>
+<input type="text" id="zcode" name="" value="" class="border-remove"><br><br>
 <hr class="vlight">
+</div>
 
-<h4 class="info">Newsletter</h4>
+<div class="info">
+<h4>Newsletter</h4>
 <h5>Select the newsletters you would like to receive</h5>
-
 <input type="checkbox" id="news" name="" value="">
 <lable for="news">HTML News</lable><br>
 <input type="checkbox" id="news" name="" value="">
 <lable for="news">CSS News</lable><br>
 <input type="checkbox" id="news" name="" value="">
 <lable for="news">Javascript News</lable><br>
+</div>
 
-<h6>Newsletter format</h6>
+<div class="format">
+<h4>Newsletter format</h4>
 <input type="radio" id="format" name="" value="">
 <lable for="format">HTML</lable><br>
 <input type="radio" id="format" name="" value="">
 <lable for="format">Plain text</lable><br>
-<p>Other topics you'd like to hear about</p>
-<textarea class="long"></textarea><br>
-</main>
+
+<div id="message">
+    <label for="msg">Other topics you'd like to hear about</label>
+    <textarea id="msg" name="user_message" class="border-remove"></textarea>
+</div>
+
+<div class="button">
+    <button type="submit">Sign Up</button>
+    <p class="tagline">Copyright The Code Review</p>
+</div>
+
 </form>
 
-<footer>
-    
-<input type="submit" value="Sign Up" class="button">
-    <p class="tagline foot">Copyright The Code Review</p>
-</footer>
-
-
-
-
-</div>
 </body>
 </html>
