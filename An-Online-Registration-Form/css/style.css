@@ -1,174 +1,145 @@
-*{
-
-    box-sizing: border-box;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-    
+* {
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+  margin: 0;
+  padding: 0;
 }
 
-input, textarea, select, button {
-    
-    font-family:inherit;
-    font-size: inherit;
-    box-sizing: border-box;
-  }
-
-  textarea{
-  
-  resize: horizontal;
-  
-  
-  border:0;
-  
- 
-  
-    display : block;
-  
-    padding : 10px;
-    margin  : 10px 0 0 -10px;
-    width   : 100%;
-    height  : 90%;
-  
-    border-right: 1px solid;
-  
-    /* resize  : none; */
-    overflow: auto;
-  
-  }
-
-  button {
-    padding      : 5px;
-    font         : bold .6em sans-serif;
-    border       : 2px solid #333;
-    border-radius: 5px;
-    background   : none;
-    cursor       : pointer;
-    transform    : rotate(-1.5deg);
-  }
-  
-  button:after {
-    content      : " >>>";
-  }
-  
-  button:hover,
-  button:focus {
-    outline     : none;
-    background  : #000;
-    color       : #FFF;
-  }
-
-  
-
-  input[type=text] , input[type=radio] , input[type=checkbox], textarea{
-    padding: 10px;
-    margin:5px 0;
-   
-  }
-
-  label{
-
-    color:grey;
-   
-        font : .8em "typewriter", sans-serif;
-      }
-  
-  select {
-  
-    padding:10px;
-    background-color: rgb(240, 240, 240);
-    border: none;
-  }
-
-  .border-remove {
-    border: none;
-    background-color: rgb(240, 240, 240);
-  }
-
-.main-head{
-
-   
-    width: 60%;
-    
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: #e9e7e7;
 }
 
-
-
-
-.button{
-background-color: turquoise; 
-border:none ;
-
-
-padding: 15px;
-color: white;
-font-weight: bold;
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: #a0a0a0;
 }
 
+input[type="submit"] {
+  background-color: #06b4b4;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
 
+input[type="submit"]:hover {
+  background-color: #011102;
+}
 
-.info{
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
 
-    margin: 10px;
+/* .container2 {
+  display:flex;
+  flex-direction: column;
+	justify-content: center;
+} */
+
+.col-25 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+.col-30 {
+  float: left;
+  width: 40%;
+  margin-top: 6px;
+}
+
+textarea {
+  height: 100px;
+  padding: 12px 12px 12px 0;
+  margin: 10px 0;
 }
 
 /* styling horizontal line */
 
-.dark{
-
-    border-top: 3px solid black;
+.dark {
+  border-top: 4px solid black;
 }
 
-.light{
-
-    border-top: 2px solid grey;
+.light {
+  border-top: 2px solid grey;
+  margin-bottom: 30px;
+  
 }
 
-.vlight{
+.vlight {
+  border-top: 2px solid black;
+}
 
-    border-top: 2px solid black;
+p {
+  color: #a0a0a0;
 }
 
 /* end styling horizontal line */
 
-.contact{
-
-    text-transform: uppercase;
-    color: #fff;
-    background-color: blueviolet;
-    padding: 15px;
-    margin-bottom: 30px;
+.main-head {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #002b46;
+  padding: 15px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.tagline{
-
-    color:lightgrey;
-    margin:0 0 15px 0 ;
-
-}
-.foot{
-
-   margin:15px; 
+header,
+.footer,.middle {
+  text-align: center;
 }
 
-button, input, select, textarea {
-    font-family: inherit;
-    font-size: 100%;
+header {
+  font-weight: bold;
+}
+
+.info {
+  margin-bottom: 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
   }
 
-  fieldset {
-    position: relative;
+  .col-30 {
+    float: left;
+    width: 40% !important;
+    margin-top: 6px;
   }
-  
-  legend {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-
-
-/* media screen for ::-moz-list-bullet
-input {
-    width:100%;
-  } */
-
+}
