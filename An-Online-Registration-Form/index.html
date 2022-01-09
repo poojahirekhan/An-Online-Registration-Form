@@ -35,12 +35,18 @@
             <p class="middle">Get the latest news on how your code is doing right in your inbox</p><br>
             <hr class="dark" />
             <hr class="light" />
-                <h2>Contact Information</h2>
+
+          </div>
+
+
+            <fieldset>
+              <legend><h2>Contact Information</h2></legend>
+                
                 
                 <br>
 
             
-        </div>
+        
       <div class="row">
         <div class="col-25">
           <label for="fname">Full Name</label>
@@ -63,7 +69,7 @@
           <label for="phone">Phone Number</label>
         </div>
         <div class="col-75">
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Required">
         </div>
       </div>
 
@@ -123,28 +129,31 @@
       
       <hr class="vlight" />
       <br>
-     
+    </fieldset>
 
-      <h2>Newsletter</h2>
+    <fieldset>
+      <legend> <h2>Newsletter</h2></legend>
+
+     
       <br>
       <p>select the newsletters you would like to receive</p>
     
 
-          <input type="checkbox" id="html_news" name="html_news" value="" />
+          <input type="checkbox" id="html_news" name="news" value="html_news" />
           <label for="html_news">HTML News</label><br />
-          <input type="checkbox" id="css_news" name="css_news" value="" />
+          <input type="checkbox" id="css_news" name="news" value="css_news" />
           <label for="css_news">CSS News</label><br />
-          <input type="checkbox" id="javascript_news" name="javascript_news" value="" />
+          <input type="checkbox" id="javascript_news" name="news" value="javascript_news" />
           <label for="javascript_news">Javascript News</label><br />
 
       
 
-<br>
+        <br>
         <p>Newsletter format</p>
 
-          <input type="radio" id="HTML_format" name="HTML_format" value="HTML_format" />
+          <input type="radio" id="HTML_format" name="format" value="HTML_format" />
           <label for="HTML_format">HTML</label><br />
-          <input type="radio" id="text_format" name="text_format" value="text_format" />
+          <input type="radio" id="text_format" name="format" value="text_format" />
           <label for="text_format">Plain text</label><br />
 
 
@@ -154,16 +163,18 @@
        
 
       
-      <div class="row">
-        <input type="submit" value="Sign Up">
-      </div>
+              <div class="row">
+                <input type="submit" value="Sign Up">
+              </div>
 
-      <div class="footer">
+              <div class="footer">
 
-      <p><i>Copyright The Code Review</i></p>
-    </div>
-      </form>
-    </div>
+              <p><i>Copyright The Code Review</i></p>
+            </div>
+          </fieldset>
+              </form>
+            </div>
+  
     
 
 

@@ -16,6 +16,11 @@ textarea {
   border-radius: 4px;
   resize: vertical;
   background-color: #e9e7e7;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border: 3px solid #002b46;
 }
 
 label {
@@ -55,17 +60,17 @@ input[type="submit"]:hover {
 } */
 
 .col-25,
-  .col-75,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
-  }
+.col-75,
+input[type="submit"] {
+  width: 100%;
+  margin-top: 0;
+}
 
-  .col-30 {
-    float: left;
-    width: 40% !important;
-    margin-top: 6px;
-  }
+.col-30 {
+  float: left;
+  width: 40% !important;
+  margin-top: 6px;
+}
 
 /* .col-25 {
   float: left;
@@ -85,6 +90,11 @@ input[type="submit"]:hover {
   margin-top: 6px;
 } */
 
+fieldset,
+legend {
+  border: none;
+}
+
 textarea {
   height: 100px;
   padding: 12px 12px 12px 0;
@@ -100,7 +110,6 @@ textarea {
 .light {
   border-top: 2px solid grey;
   margin-bottom: 30px;
-  
 }
 
 .vlight {
@@ -123,7 +132,8 @@ p {
 }
 
 header,
-.footer,.middle {
+.footer,
+.middle {
   text-align: center;
 }
 
@@ -142,28 +152,26 @@ header {
   clear: both;
 }
 
-@media only screen and (min-width: 600px) {
-
+@media only screen and (min-width: 368px) {
   .col-25 {
     float: left;
     width: 30%;
     margin-top: 6px;
   }
-  
+
   .col-75 {
     float: left;
     width: 70%;
     margin-top: 6px;
   }
-  
+
   .col-30 {
     float: left;
     width: 40%;
     margin-top: 6px;
   }
+}
 
-
-/* }
 @media screen and (max-width: 768px) {
   .col-25,
   .col-75,
@@ -177,4 +185,4 @@ header {
     width: 40% !important;
     margin-top: 6px;
   }
-} */
+}
